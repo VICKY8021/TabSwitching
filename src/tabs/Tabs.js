@@ -1,8 +1,6 @@
 import * as React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { Description } from '@material-ui/icons';
-import DescriptionTwoToneIcon from '@mui/icons-material/DescriptionTwoTone';
-import DescriptionSharpIcon from '@mui/icons-material/DescriptionSharp';
 import './Tabs.css';
 import { Box, Tab, Tabs, Typography } from '@material-ui/core';
 
@@ -25,11 +23,11 @@ function TabPanel(props) {
     );
 }
 
-TabPanel.propTypes = {
-    children: PropTypes.node,
-    index: PropTypes.number.isRequired,
-    value: PropTypes.number.isRequired,
-};
+// TabPanel.propTypes = {
+//     children: PropTypes.node,
+//     index: PropTypes.number.isRequired,
+//     value: PropTypes.number.isRequired,
+// };
 
 function a11yProps(index) {
     return {
@@ -55,10 +53,10 @@ export default function Center() {
                         aria-label="basic tabs example"
                     >
                         <Tab className="tab_label" icon={<Description />} label="Confirmation" {...a11yProps(0)} />
-                        <Tab className="tab_label" icon={<DescriptionTwoToneIcon />} label="Statements" {...a11yProps(1)} />
-                        <Tab className="tab_label" icon={<DescriptionSharpIcon />} label="Transcripts" {...a11yProps(2)} />
-                        <Tab className="tab_label" icon={<DescriptionTwoToneIcon />} label="Tex forms" {...a11yProps(3)} />
-                        <Tab className="tab_label" icon={<DescriptionSharpIcon />} label="Fund documents" {...a11yProps(4)} />
+                        <Tab className="tab_label" icon={<Description />} label="Statements" {...a11yProps(1)} />
+                        <Tab className="tab_label" icon={<Description />} label="Transcripts" {...a11yProps(2)} />
+                        <Tab className="tab_label" icon={<Description />} label="Tex forms" {...a11yProps(3)} />
+                        <Tab className="tab_label" icon={<Description />} label="Fund documents" {...a11yProps(4)} />
                     </Tabs>
                 </Box>
                 <TabPanel value={value} index={0}>
