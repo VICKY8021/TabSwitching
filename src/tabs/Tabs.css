@@ -1,0 +1,22 @@
+.tab{
+    margin: 35px;
+    margin-left: 300px;
+}
+.tab_label{
+    display: flex;
+    flex-flow: row;
+    min-height: 56px;
+    border-bottom: 1px solid #e7e3e3 !important;
+}
+.tab_label.Mui-selected{
+    border: 1px solid #e7e3e3;
+    border-bottom: 0 !important;
+    border-radius: 5px 5px 0px 0px;
+    
+}
+.tab_main .PrivateTabIndicator-colorSecondary-7{
+    display: none !important;
+}
+.tab_main .MuiTab-wrapper{
+    flex-direction: row;
+}
